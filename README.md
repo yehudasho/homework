@@ -9,7 +9,7 @@ In this home assigments I was asked to create an echo-system which can run on  m
   
 # Prerequisites
 
-in order to get the system up and running on your local machine for development and testing purposes, you'll need Dokcer and Docker-compose.
+1. in order to get the system up and running on your local machine for development and testing purposes, you'll need Dokcer and Docker-compose.
 
 How to install Docker and Docker-compose: On Linux (CentOs 7): https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7)
 
@@ -18,4 +18,14 @@ On Windows 10 64bit: Pro, Enterprise or Education (Build 15063 or later): https:
 On other Windows versions: https://docs.docker.com/toolbox/toolbox_install_windows/
 
 On mac: https://docs.docker.com/docker-for-mac/install/
+
+2. based on DOcer-comopse you should install minikube, link for installation:
+https://vocon-it.com/2018/11/19/single-node-kubernetes-cluster-1-installing-minikube-on-centos/
+
+# Setting up on local machine ( i used CentOS 7 )
+
+1. git clone the both services ( producer and consumer )
+  https://github.com/surielb/devops-test
+
+
 
