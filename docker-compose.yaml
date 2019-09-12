@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7.27
+    volumes:
+      - /mnt/mysql:/var/lib/mysql
+      - ./db_scripts:/docker-entrypoint-initdb.d/
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    ports:
+     - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka1:
+    image: 'bitnami/kafka:latest'
+    ports:
+      - '9092:9092'
+    environment:
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes 
+
+  producer:
+    build:
+      context: /homework/devops-test-master/producer
+      dockerfile: Dockerfile
+    ports:
+      - '9000:9000'
+  consumer:
+    build:
+      context: /homework/devops-test-master/consumer
+      dockerfile: Dockerfile
+    ports:
+      - '9001:9001'
