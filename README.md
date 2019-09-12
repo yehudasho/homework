@@ -38,8 +38,8 @@ two servicses will be establish during the runtime of docker-compose
 # Building 
 so build order is:
 
-mvn install -f ./common
-mvn install -f ./producer
-mvn install -f ./consumer
+* mvn install -f ./common/pom.xml
+* mvn install -f ./producer/pom.xml
+* mvn install -f ./consumer/pom.xml
 
 
