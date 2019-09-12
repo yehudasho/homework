@@ -29,5 +29,17 @@ https://vocon-it.com/2018/11/19/single-node-kubernetes-cluster-1-installing-mini
 2. copy the contant of consumer file int app.properties
 3. copy the contant of producer file int app.properties
 
+# run the docker-compose
+
+two servicses will be establish during the runtime of docker-compose 
+  Mysql - and init script will be run
+  Kafka
+
+# Building 
+so build order is:
+
+mvn install -f ./common
+mvn install -f ./producer
+mvn install -f ./consumer
 
 
