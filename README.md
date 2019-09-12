@@ -42,4 +42,8 @@ so build order is:
 * mvn install -f ./producer/pom.xml
 * mvn install -f ./consumer/pom.xml
 
+# convert docker-compose.yaml to char via kompose
+https://github.com/kubernetes/kompose
+
+
 
