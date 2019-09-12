@@ -26,6 +26,8 @@ https://vocon-it.com/2018/11/19/single-node-kubernetes-cluster-1-installing-mini
 
 1. git clone the both services ( producer and consumer )
   https://github.com/surielb/devops-test
+2. copy the contant of consumer file int app.properties
+3. copy the contant of producer file int app.properties
 
 
 
