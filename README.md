@@ -1,5 +1,5 @@
 # homework
-#home assignment 
+# home assignment 
 
 In this home assigments I was asked to create an echo-system which can run on  multiple environments.
 1.	Deploy MySQL & Kafka on a K8s cluster
